@@ -2,27 +2,32 @@
     font-family: font;
     src: url(./62f534ee4efd726b7483e52f_BebasNeuePro-SemiExpBold.ttf);
 }
+
 /* @font-face {
     font-family: font1;
     src: url(./remixicon.ttf);
 } */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: font;
 }
-html, body{
+
+html,
+body {
     width: 100%;
     height: 100%;
 }
-#main{
+
+#main {
     width: 100%;
     position: relative;
     background-color: black;
 }
-#nav{
+
+#nav {
     width: 100%;
     background-color: black;
     display: flex;
@@ -31,31 +36,35 @@ html, body{
     padding: 2vw 3vw;
 }
 
-#nav-p1{
+#nav-p1 {
     height: 100%;
     display: flex;
     align-items: center;
 }
-#nav-p1 img{
+
+#nav-p1 img {
     width: 6.5vw;
 }
-#links{
+
+#links {
     margin-left: 3vw;
 }
-#links a{
+
+#links a {
     margin-left: 3.4vw;
     font-weight: 500;
     text-decoration: none;
-    color:rgb(150, 194, 204);
+    color: rgb(150, 194, 204);
     font-family: gilroy;
     font-size: 1.2vw;
     position: relative;
 }
-#links a .line{
+
+.line {
     position: absolute;
     width: 100%;
     height: 0.1vw;
-    background-color:black;
+    background-color: black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,16 +72,19 @@ html, body{
     bottom: -0.2vw;
 
 }
-#links a:hover .anim-line{
+
+#links a:hover .anim-line {
     width: 100%;
 }
-.line .anim-line{
+
+.line .anim-line {
     width: 0%;
     height: 100%;
     background-color: rgb(150, 194, 204);
     transition: all ease 0.2s;
 }
-#nav button{
+
+#nav button {
     padding: 1vw 3vw;
     font-size: 1.6vw;
     border: 1px solid #BCF3FF;
@@ -80,35 +92,38 @@ html, body{
     color: rgb(150, 194, 204);
     transition: all ease 0.4s;
 }
-#nav button:hover{
+
+#nav button:hover {
     background-color: #BCF3FF;
     color: black;
 }
-#page1{
-    width: 100%;
-    height: 37vmax;
+
+#page1 {
+    width: 100%vh;
     position: relative;
     background-color: black;
     display: flex;
     padding: 0px 3vw;
     overflow: hidden;
 }
-#page1 #bgimg{
+
+#page1 #bgimg {
     width: 70vw;
     position: absolute;
     right: -15vw;
     z-index: 9;
     top: -3vw;
-    background-color: red;
+    /* background-color: red; */
 }
 
-#page1 #bgimg #bgimg1{
-    width:100%;
+#page1 #bgimg #bgimg1 {
+    width: 100%;
     height: 100%;
     object-fit: cover;
-    
+
 }
-#page1 #bgimg2{
+
+#page1 #bgimg2 {
     width: 9vw;
     height: 9vw;
     animation-name: rotate;
@@ -116,7 +131,8 @@ html, body{
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
-#page1 #bgimg3{
+
+#page1 #bgimg3 {
     width: 8vw;
     object-fit: cover;
     /* background-color: red; */
@@ -124,25 +140,27 @@ html, body{
     z-index: 99999;
     right: 7vw;
     top: 20vw;
-    
+
 }
 
-#page1 h1{
+#page1 h1 {
     color: white;
     font-size: 20vw;
     z-index: 99;
     line-height: 15vw;
     position: relative;
     left: 10vw;
-    top:8vw;
+    top: 8vw;
 
 }
+
 #page1 h1 span {
     font-size: 12vw;
     position: relative;
     top: -5vw;
 }
-#page1 p{
+
+#page1 p {
     color: white;
     z-index: 99;
     position: relative;
@@ -150,28 +168,110 @@ html, body{
     left: -12vw;
     font-size: 2.3vw;
 }
+
 @keyframes rotate {
-    0%{
+    0% {
         transform: rotate(0deg);
     }
-    100%{
+
+    100% {
         transform: rotate(360deg);
     }
 }
-#page2{
+
+#page2 {
     width: 100%;
-    height:70vh;
+    height: 50vw;
     background-color: rgb(0, 0, 0);
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-around;
 
+
 }
 
-#page2-inner{
-    width: 100%;
-    height: 45vh;
+#page2-inner {
+    width: 100vw;
+    height: 20vw;
     background: linear-gradient(to right, #5494A2, #7F454D);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5vw;
+
+}
+
+#page2-p1 p {
+    color: white;
+    margin-bottom: 3vw;
+    font-family: gilroy;
+    font-size: 1vw;
+
+}
+
+#page2-p1 h2 {
+    color: white;
+    font-weight: 600;
+    font-family: gilroy;
+    font-size: 2.5vw;
+}
+
+#page2-p2 {
+    display: flex;
+    gap: 4vw;
+}
+
+#page2-p2 #p2-p1 h1 {
+    font-size: 8vw;
+    text-align: center;
+    font-family: gilroy;
+    font-weight: 300;
+    position: relative;
+    color: white;
+
+}
+
+.h1line {
+    width: 100%;
+    height: 0.2vw;
+    background-color: transparent;
+    position: absolute;
+    left: 0;
+    bottom: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.h1div{
     
+    width: 0%;
+    height: 100%;
+    background-color: white;
+    transition: all ease 0.7s;
+}
+
+#page2-p2 #p2-p2 h1 {
+    font-size: 8vw;
+    text-align: center;
+    font-family: gilroy;
+    font-weight: 300;
+    position: relative;
+    color: white;
+}
+
+#page2-p2 h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+}
+
+#p2-p1 h1:hover .h1div {
+    width: 100%;
+}
+#p2-p2 h1:hover .h1div {
+    width: 100%;
 }
