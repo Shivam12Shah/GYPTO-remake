@@ -18,16 +18,17 @@ html, body{
     height: 100%;
 }
 #main{
+    width: 100%;
     position: relative;
+    background-color: black;
 }
 #nav{
-    width: 100vw;
-    height: 20vh;
+    width: 100%;
     background-color: black;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 50px;
+    padding: 2vw 3vw;
 }
 
 #nav-p1{
@@ -47,12 +48,130 @@ html, body{
     text-decoration: none;
     color:rgb(150, 194, 204);
     font-family: gilroy;
+    font-size: 1.2vw;
+    position: relative;
+}
+#links a .line{
+    position: absolute;
+    width: 100%;
+    height: 0.1vw;
+    background-color:black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    bottom: -0.2vw;
+
+}
+#links a:hover .anim-line{
+    width: 100%;
+}
+.line .anim-line{
+    width: 0%;
+    height: 100%;
+    background-color: rgb(150, 194, 204);
+    transition: all ease 0.2s;
 }
 #nav button{
-    padding: 12px 30px;
+    padding: 1vw 3vw;
     font-size: 1.6vw;
-    border: 1px solid rgb(150, 194, 204);
+    border: 1px solid #BCF3FF;
     background-color: transparent;
     color: rgb(150, 194, 204);
-    font-family: font1;
+    transition: all ease 0.4s;
+}
+#nav button:hover{
+    background-color: #BCF3FF;
+    color: black;
+}
+#page1{
+    width: 100%;
+    height: 37vmax;
+    position: relative;
+    background-color: black;
+    display: flex;
+    padding: 0px 3vw;
+    overflow: hidden;
+}
+#page1 #bgimg{
+    width: 70vw;
+    position: absolute;
+    right: -15vw;
+    z-index: 9;
+    top: -3vw;
+    background-color: red;
+}
+
+#page1 #bgimg #bgimg1{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+#page1 #bgimg2{
+    width: 9vw;
+    height: 9vw;
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#page1 #bgimg3{
+    width: 8vw;
+    object-fit: cover;
+    /* background-color: red; */
+    position: absolute;
+    z-index: 99999;
+    right: 7vw;
+    top: 20vw;
+    
+}
+
+#page1 h1{
+    color: white;
+    font-size: 20vw;
+    z-index: 99;
+    line-height: 15vw;
+    position: relative;
+    left: 10vw;
+    top:8vw;
+
+}
+#page1 h1 span {
+    font-size: 12vw;
+    position: relative;
+    top: -5vw;
+}
+#page1 p{
+    color: white;
+    z-index: 99;
+    position: relative;
+    top: 27vw;
+    left: -12vw;
+    font-size: 2.3vw;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+#page2{
+    width: 100%;
+    height:70vh;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+#page2-inner{
+    width: 100%;
+    height: 45vh;
+    background: linear-gradient(to right, #5494A2, #7F454D);
+    
 }
